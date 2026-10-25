@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CircleApp.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CircleApp.Data
 {
@@ -8,6 +9,6 @@ namespace CircleApp.Data
         {
         }
 
-        
+        public DbSet<Post> Posts { get; set; }
     }
 }
