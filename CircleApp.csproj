@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>5d01d604-2030-4407-8e82-e16870d4ef69</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\style.css" />
+    <Content Remove="wwwroot\css\tailwind.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\css\tailwind.css" />
+    <None Include="wwwroot\images\favicon.png" />
+    <None Include="wwwroot\images\icons\group-2.png" />
+    <None Include="wwwroot\images\icons\home.png" />
+    <None Include="wwwroot\images\icons\page.png" />
+    <None Include="wwwroot\images\icons\video.png" />
+    <None Include="wwwroot\images\logo.png" />
+    <None Include="wwwroot\js\script.js" />
+    <None Include="wwwroot\js\simplebar.js" />
+    <None Include="wwwroot\js\uikit.min.js" />
+    <None Include="wwwroot\syntax-highlighter\scripts\shBrushJScript.js" />
+    <None Include="wwwroot\syntax-highlighter\scripts\shBrushXml.js" />
+    <None Include="wwwroot\syntax-highlighter\scripts\shCore.js" />
+    <None Include="wwwroot\syntax-highlighter\styles\shCore.css" />
+    <None Include="wwwroot\syntax-highlighter\styles\shCoreMidnight.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
+  </ItemGroup>
+
+</Project>
