@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\Downloads\CircleApp\CircleApp\CircleApp\Views\Shared\Modals\_CreateStatus.cshtml" Link="Views\Shared\Modals\_CreateStatus.cshtml" />
     <None Include="..\..\..\Downloads\CircleApp\CircleApp\CircleApp\Views\Shared\Sidebar\_SuggestedFriends.cshtml" Link="Views\Shared\Sidebar\_SuggestedFriends.cshtml" />
     <None Include="..\..\..\Downloads\CircleApp\CircleApp\CircleApp\Views\Shared\Sidebar\_TrendsForYou.cshtml" Link="Views\Shared\Sidebar\_TrendsForYou.cshtml" />
     <None Include="wwwroot\css\style.css" />
