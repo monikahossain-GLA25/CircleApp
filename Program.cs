@@ -7,8 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 
-var connectionString = builder.Configuration
-    .GetConnectionString("Default");
+var connectionString =
+    builder.Configuration.GetConnectionString("Default")
+    ?? throw new InvalidOperationException(
+        "Connection string 'Default' was not found.");
+
 
 if (string.IsNullOrWhiteSpace(connectionString))
 {
